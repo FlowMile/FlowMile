@@ -1,0 +1,11 @@
+{
+    "nodes": [
+        {"id": "__start__", "type": "schema", "data": "__start__"},
+        {"id": "action1", "type": "runnable", "data": {"function": "invoice_data_extract_func"}},
+        {"id": "__end__", "type": "schema", "data": "__end__"}
+    ],
+    "edges": [
+        {"source": "__start__", "target": "action1"},
+        {"source": "action1", "target": "__end__", "data": "end"}
+    ]
+}

@@ -1,6 +1,12 @@
 from core.flows.flow1 import Flow1
 from core.flows.flow2 import Flow2
 from core.flows.flow3 import Flow3
+from core.flows.flow4 import Flow4
+from core.flows.flow5 import Flow5
+from core.flows.flow6 import Flow6
+from core.flows.flow7 import Flow7 
+#from core.flows.flow8 import Flow8 
+
 
 def one():
     f = Flow1()
@@ -46,5 +52,29 @@ def three():
 def four():
     f = Flow3()
     f.run_graph()
+    
+def five():
+    f = Flow4()
+    f.run_graph()
+    
+def six():
+    f = Flow5()
+    f.run_graph()
+    
+def seven():
+    f = Flow6()
+    f.run_graph()
+    
+def eight():
+    f = Flow7()
+    f.run_graph()
+    
+def nine():
+    f = Flow8()
+    f.run_graph()
+    
+def ten():
+    f = Flow7()
+    f.run_graph()
 
-four()
+ten()
