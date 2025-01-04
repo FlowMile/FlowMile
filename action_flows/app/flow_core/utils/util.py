@@ -14,7 +14,11 @@ def read_pdf_text(file_path):
 def read_image_from_url(image_url):
     return base64.b64encode(httpx.get(image_url).content).decode("utf-8")
 
-
+def read_image_from_path(file_path):
+    content = ''
+    with open(file_path, "rb") as imageFile:
+        content = base64.b64encode(imageFile.read()).decode("utf-8")
+    return content
 
 def read_file(file_path):
     content = ''

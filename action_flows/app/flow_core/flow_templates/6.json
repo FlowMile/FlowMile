@@ -1,0 +1,13 @@
+{
+    "nodes": [
+        {"id": "__start__", "type": "schema", "data": "__start__"},
+        {"id": "action1", "type": "runnable", "data": {"function": "test1"}},
+        {"id": "action2", "type": "runnable", "data": {"function": "test2"}},
+        {"id": "__end__", "type": "schema", "data": "__end__"}
+    ],
+    "edges": [
+        {"source": "__start__", "target": "action1"},
+        {"source": "action1", "target": "action2", "data": "end"},
+        {"source": "action2", "target": "__end__", "data": "end"}
+    ]
+}

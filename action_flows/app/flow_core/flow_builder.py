@@ -4,6 +4,7 @@ from typing import TypedDict, Literal, Callable, Dict
 from langgraph.graph import StateGraph, END
 from app.flow_core.abstract_flow import AgentState, GraphState
 from app.flow_core.tools.generic_tool import generic_tool_func
+from app.flow_core.tools.tools import invoice_data_extract_func, pdf_data_extract_func, json_to_csv_func
 
 def call_model(state):
     print('calling model')
@@ -25,7 +26,11 @@ function_registry = {
     "call_model": call_model,
     "tool_node": tool_node,
     "should_continue": should_continue,
-    "generic_tool_func": generic_tool_func
+    "generic_tool_func": generic_tool_func,
+    "invoice_data_extract_func": invoice_data_extract_func,
+    "pdf_data_extract_func": pdf_data_extract_func,
+    "json_to_csv_func": json_to_csv_func,
+   
 }
 
 

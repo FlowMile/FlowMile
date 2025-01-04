@@ -1,10 +1,11 @@
-from core.flows.flow1 import Flow1
-from core.flows.flow2 import Flow2
-from core.flows.flow3 import Flow3
-from core.flows.flow4 import Flow4
-from core.flows.flow5 import Flow5
-from core.flows.flow6 import Flow6
-from core.flows.flow7 import Flow7 
+'''from app.flow_core.experiments.flow1 import Flow1
+
+from app.flow_core.experiments.flow3 import Flow3
+from app.flow_core.experiments.flow4 import Flow4
+from app.flow_core.experiments.flow2 import Flow2'''
+
+from app.flow_core.experiments.flow2 import Flow2
+
 #from core.flows.flow8 import Flow8 
 
 
@@ -77,4 +78,4 @@ def ten():
     f = Flow7()
     f.run_graph()
 
-ten()
+three()

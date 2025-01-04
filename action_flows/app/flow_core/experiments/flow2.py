@@ -1,10 +1,11 @@
-from core.flows.abstract_flow import AbstractFlow
+from app.flow_core.abstract_flow import AbstractFlow
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage
-from core.ai_models.provider import get_model
-from core.utils import util
+from app.flow_core.ai_models.provider import get_model
+from app.flow_core.utils import util
 
 def process_image(state):
+    print(state)
     prompt = state.get('prompt')
     image_data = state.get('output')['image_data']
     message = HumanMessage(
